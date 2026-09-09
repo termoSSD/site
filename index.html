@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Довідник з основ HTML - Навчальний посібник</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Інтерактивний довідник: Вивчаємо HTML</h1>
+        <p>Лабораторна робота з веб-розробки: базові теги, синтаксис та семантика</p>
+    </header>
+    <main>      
+        <div>
+            <strong>Автор роботи:</strong> Студент Манько Олег
+        </div>
+
+        <!-- ================= БЛОК 1: Заголовки ================= -->
+        <section>
+            <h2><strong>Блок 1. Як створити заголовки різних рівнів?</strong></h2>
+            <p>В HTML для створення заголовків використовуються теги від 
+                <code>&lt;h1&gt;</code> (головний заголовок сторінки) до 
+                <code>&lt;h6&gt;</code> (найменший підзаголовок).
+            </p>
+
+            <h3>Результат у браузері:</h3>
+            <div class="result-box">
+                <h2>Заголовок другого рівня</h2>
+                <h4>Підзаголовок четвертого рівня</h4>
+            </div>
+        </section>
+
+        <!-- ================= БЛОК 2: Форматування тексту ================= -->
+        <section>
+            <h2><strong>Блок 2. Як форматувати текст у HTML?</strong></h2>
+            <p>В HTML для форматування тексту використовуються різні теги, такі як:</p>
+            <ul>
+                <li><code>&lt;strong&gt;</code> - для жирного тексту</li>
+                <li><code>&lt;em&gt;</code> - для курсивного тексту</li>
+                <li><code>&lt;u&gt;</code> - для підкресленого тексту</li>
+            </ul>
+        </section>
+
+        <!-- ================= БЛОК 3: Гіперпосилання ================= -->
+        <section>
+            <h2><strong>Блок 3. Як створити гіперпосилання на зовнішній ресурс?</strong></h2>
+            <p><strong>Відповідь:</strong> Гіперпосилання створюються за допомогою тега <code>&lt;a&gt;</code>. Обов'язковий атрибут <code>href</code> вказує URL-адресу, а атрибут <code>target="_blank"</code> відкриває посилання у новій вкладці.</p>
+            <h3>HTML-код:</h3>
+            <pre><code>&lt;a href="https://www.w3schools.com/html/default.asp" target="_blank"&gt;Документація W3Schools&lt;/a&gt;</code></pre>
+            <h3>Результат у браузері:</h3>
+            <div>
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank">Документація W3Schools</a>
+            </div>
+        </section>
+
+        <!-- ================= БЛОК 4: Зображення ================= -->
+        <section>
+            <h2><strong>Блок 4. Як додати зображення на веб-сторінку?</strong></h2>
+            <p>Зображення додаються одинарним тегом <code>&lt;img&gt;</code>. Атрибут <code>src</code> визначає шлях до файлу (локального або URL), а <code>alt</code> містить альтернативний текст для доступності.</p>
+            <h3>HTML-код:</h3>
+            <pre><code>&lt;img src="https://en.wikipedia.org/wiki/File:HTML5-logo.svg" alt="Логотип HTML5" width="350"&gt;</code></pre>
+            <h3>Результат у браузері:</h3>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Логотип HTML5" width="200">
+            </div>
+        </section>
+
+        <!-- ================= БЛОК 5: Невпорядкований список ================= -->
+        <section>
+            <h2><strong>Блок 5. Як створити маркований (невпорядкований) список?</strong></h2>
+            <p>Використовується контейнерний тег <code>&lt;ul&gt;</code> (unordered list), а кожен окремий пункт списку загортається в тег <code>&lt;li&gt;</code> (list item).</p>
+            <h3>HTML-код:</h3>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Мова розмітки HTML&lt;/li&gt;
+    &lt;li&gt;Таблиці стилів CSS&lt;/li&gt;
+    &lt;li&gt;Мова програмування JavaScript&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <h3>Результат у браузері:</h3>
+            <div>
+                <ul>
+                    <li>Мова розмітки HTML</li>
+                    <li>Таблиці стилів CSS</li>
+                    <li>Мова програмування JavaScript</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= БЛОК 6: Впорядкований список ================= -->
+        <section>
+            <h2>Блок 6. Як створити нумерований (впорядкований) список?</h2>
+            <p><strong>Відповідь:</strong> Для нумерованого списку застосовується тег <code>&lt;ol&gt;</code> (ordered list), де кожен елемент так само розміщується всередині <code>&lt;li&gt;</code>.</p>
+            <h3>HTML-код:</h3>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;Встановити VS Code&lt;/li&gt;
+    &lt;li&gt;Створити структуру файлів&lt;/li&gt;
+    &lt;li&gt;Відкрити проект у браузері&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            <h3>Результат у браузері:</h3>
+            <div>
+                <ol>
+                    <li>Встановити VS Code</li>
+                    <li>Створити структуру файлів</li>
+                    <li>Відкрити проект у браузері</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ================= БЛОК 7: Список визначень ================= -->
+        <section>
+            <h2><strong>Блок 7. Як створити список термінів та визначень?</strong></h2>
+            <p>Використовується тег <code>&lt;dl&gt;</code> (description list). Термін задається за допомогою <code>&lt;dt&gt;</code> (definition term), а його опис — через <code>&lt;dd&gt;</code> (definition description).</p>
+            <h3>HTML-код:</h3>
+            <pre><code>&lt;dl&gt;
+    &lt;dt&gt;&lt;strong&gt;HTML&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd&gt;Мова гіпертекстової розмітки для створення структури сторінки.&lt;/dd&gt;
+    &lt;dt&gt;&lt;strong&gt;CSS&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd&gt;Мова опису зовнішнього вигляду та стилів веб-документа.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+            <h3>Результат у браузері:</h3>
+            <div>
+                <dl>
+                    <dt><strong>HTML</strong></dt>
+                    <dd>Мова гіпертекстової розмітки для створення структури сторінки.</dd>
+                    <dt><strong>CSS</strong></dt>
+                    <dd>Мова опису зовнішнього вигляду та стилів веб-документа.</dd>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ================= БЛОК 8: Таблиця ================= -->
+        <section>
+            <h2><strong>Блок 8. Як побудувати таблицю даних?</strong></h2>
+            <p><strong>Відповідь:</strong> Таблиця створюється тегом <code>&lt;table&gt;</code>. Рядки формуються тегом <code>&lt;tr&gt;</code>, заголовні клітинки — <code>&lt;th&gt;</code>, а звичайні комірки з даними — <code>&lt;td&gt;</code>.</p>
+            <h3>HTML-код:</h3>
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Тег&lt;/th&gt;
+        &lt;th&gt;Призначення&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&amp;lt;p&amp;gt;&lt;/td&gt;
+        &lt;td&gt;Параграф (абзац)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&amp;lt;table&amp;gt;&lt;/td&gt;
+        &lt;td&gt;Таблиця&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            <h3>Результат у браузері:</h3>
+            <div>
+                <table>
+                    <tr>
+                        <th>Тег</th>
+                        <th>Призначення</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;p&gt;</code></td>
+                        <td>Параграф (абзац)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;table&gt;</code></td>
+                        <td>Таблиця</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- ================= БЛОК 9: Спеціальні символи ================= -->
+        <section>
+            <h2><strong>Блок 9. Як вивести спеціальні символи (HTML Entities)?</strong></h2>
+            <p><strong>Відповідь:</strong> Оскільки символи <code>&lt;</code> і <code>&gt;</code> зарезервовані для тегів, для них використовують HTML-сутності: <code>&amp;lt;</code> для менше, <code>&amp;gt;</code> для більше, <code>&amp;amp;</code> для амперсанда, а також <code>&amp;copy;</code> для знака копірайту.</p>
+            <h3>HTML-код:</h3>
+            <pre><code>&lt;p&gt;Копірайт: &amp;copy; 2026 | Стрілка: &amp;rarr; | Тег: &amp;lt;div&amp;gt;&lt;/p&gt;</code></pre>
+            <h3>Результат у браузері:</h3>
+            <div>
+                <p>Копірайт: &copy; 2026 | Стрілка: &rarr; | Тег: &lt;div&gt;</p>
+            </div>
+        </section>
+
+        <!-- ================= БЛОК 10: Цитати ================= -->
+        <section>
+            <h2><strong>Блок 10. Як оформити блокову цитату?</strong></h2>
+            <p><strong>Відповідь:</strong> Для оформлення відокремлених цитат із зовнішніх джерел використовується тег <code>&lt;blockquote&gt;</code>, а джерело можна вказати за допомогою атрибута <code>cite</code> або тега <code>&lt;cite&gt;</code>.</p>
+            <h3>HTML-код:</h3>
+            <pre><code>&lt;blockquote cite="https://uk.wikipedia.org"&gt;
+    "Веб — це більше ніж просто технологія, це інструмент людської комунікації."
+    &lt;footer&gt;— &lt;cite&gt;Тім Бернерс-Лі&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;</code></pre>
+            <h3>Результат у браузері:</h3>
+            <div>
+                <blockquote cite="https://uk.wikipedia.org">
+                    «Веб — це більше ніж просто технологія, це інструмент людської комунікації.»
+                    <footer>- <cite>Тім Бернерс-Лі</cite></footer>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+        <!-- Семантичний блок 11: Підвал сайту -->
+        <footer>
+            <p>&copy; 2026 Навчальний проект з дисципліни Веб-технології. Всі права вроді захищено.</p>
+        </footer>
+</body>
+</html>
