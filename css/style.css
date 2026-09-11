@@ -36,7 +36,7 @@ header p {
 }
 
 /* Блок автора */
-main > div:first-child {
+#author-info {
     max-width: 820px;
     margin: 0 auto 20px auto;
     background: #e2e8f0;
@@ -80,6 +80,7 @@ section h3 {
 /* 3. Блоки результатів */
 .result-box, 
 section > div:last-child {
+    max-width: 1000px;
     background-color: #f8fafc;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
