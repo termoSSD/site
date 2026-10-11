@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menuToggle');
+    const menuToggle = document.getElementById('menuToggle') || document.querySelector('.menu-toggle-btn');
     const pageWrapper = document.querySelector('.page-wrapper');
     const sidebar = document.querySelector('.sidebar');
 
