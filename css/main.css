@@ -222,3 +222,22 @@ footer {
         overflow-x: auto !important;
     }
 }
+@media (max-width: 900px) {
+    /* Дозволяємо тексту та коду м'яко переноситися, щоб нічого не зникало за екраном */
+    body, p, span, a, li, td, th {
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Гарантуємо, що блоки коду не ламають ширину, а скроляться всередині себе */
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        max-width: 100% !important;
+    }
+
+    /* Зменшуємо зайві зовнішні відступи на маленьких екранах */
+    .page-wrapper {
+        padding: 0 5px;
+    }
+}
