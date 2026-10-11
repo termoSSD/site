@@ -77,20 +77,20 @@
 @media (max-width: 900px) {
     .sidebar {
         display: flex !important;
-        position: fixed;
-        top: 0;
-        left: -280px;
-        width: 280px;
-        height: 100vh;
-        z-index: 1100;
-        box-shadow: 5px 0 25px rgba(0,0,0,0.2);
-        overflow-y: auto;
-        border-radius: 0;
+        position: fixed !important;
+        top: 0 !important;
+        left: -280px !important;
+        width: 280px !important;
+        height: 100vh !important;
+        z-index: 9999 !important;
+        box-shadow: 5px 0 25px rgba(0,0,0,0.2) !important;
+        overflow-y: auto !important;
+        border-radius: 0 !important;
         transform: translateX(-100%);
         transition: left 0.3s ease-in-out !important;
         opacity: 1 !important;
         visibility: visible !important;
-        padding: 30px 20px;
+        padding: 30px 20px !important;
     }
 
     .sidebar.open {
