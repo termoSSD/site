@@ -79,25 +79,28 @@
         display: flex !important;
         position: fixed !important;
         top: 0 !important;
-        left: -280px !important;
+        left: 0 !important;
         width: 280px !important;
+        max-width: 85vw;
         height: 100vh !important;
+        height: 100dvh !important;
         z-index: 9999 !important;
-        box-shadow: 5px 0 25px rgba(0,0,0,0.2) !important;
         overflow-y: auto !important;
         border-radius: 0 !important;
-        transform: translateX(-100%);
-        transition: left 0.3s ease-in-out !important;
+        box-sizing: border-box;
+        padding: 70px 20px 30px !important; /* місце під кнопку меню */
         opacity: 1 !important;
         visibility: visible !important;
-        padding: 30px 20px !important;
+        transform: translateX(-110%);
+        transition: transform 0.3s ease-in-out !important;
     }
 
     .sidebar.open {
-        left: 0 !important;
+        transform: translateX(0);
+        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.2) !important;
     }
 
-    .sidebar h3{
+    .sidebar h3 {
         font-size: 16px;
         margin-bottom: 20px;
     }
