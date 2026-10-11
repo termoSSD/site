@@ -195,9 +195,18 @@ footer {
         font-size: 18px;
     }
 
-    .menu-toggle-btn{
+    .menu-toggle-btn, #menuToggle{
         padding: 12px 18px;
         font-size: 1px;
+        position: relative;
+        z-index: 10000 !important;
+        pointer-events: auto !important;
+        cursor: pointer;
+    }
+
+    header {
+        position: relative;
+        z-index: 1000;
     }
 
     body, html {
