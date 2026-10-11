@@ -80,7 +80,7 @@
         position: fixed;
         top: 0;
         left: -280px;
-        width: 260px;
+        width: 280px;
         height: 100vh;
         z-index: 1100;
         box-shadow: 5px 0 25px rgba(0,0,0,0.2);
@@ -89,9 +89,20 @@
         transition: transform 0.3s ease-in-out !important;
         opacity: 1 !important;
         visibility: visible !important;
+        padding: 30px 20px;
     }
 
     .sidebar.open {
         transform: translateX(280px);
+    }
+
+    .sidebar h3{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-menu a {
+        padding: 14px 16px;
+        font-size: 16px;
     }
 }
