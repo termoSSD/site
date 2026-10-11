@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Довідник з основ HTML - Навчальний посібник</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
 </head>
 <body>
 <!-- Головна обгортка сторінки (розбиває сторінку на 2 колонки) -->
@@ -14,17 +15,23 @@
     <aside class="sidebar">
         <h3>Зміст довідника</h3>
         <ul class="sidebar-menu">
-            <li><a href="#block-1">Заголовки</a></li>
-            <li><a href="#block-2">Форматування</a></li>
-            <li><a href="#block-3">Посилання</a></li>
-            <li><a href="#block-4">Зображення</a></li>
-            <li><a href="#block-5">Списки</a></li>
-            <li><a href="#block-8">Таблиці</a></li>
+            <li><a href="#block-1">1. Заголовки</a></li>
+            <li><a href="#block-2">2. Форматування</a></li>
+            <li><a href="#block-3">3. Посилання</a></li>
+            <li><a href="#block-4">4. Зображення</a></li>
+            <li><a href="#block-5">5. Невпорядкований список</a></li>
+            <li><a href="#block-6">6. Впорядкований список</a></li>
+            <li><a href="#block-7">7. Список визначень</a></li>
+            <li><a href="#block-8">8. Таблиці</a></li>
+            <li><a href="#block-9">9. Спецсимволи</a></li>
+            <li><a href="#block-10">10. Цитати</a></li>
         </ul>
     </aside>
 
     <!-- Правий блок з основним контентом -->
     <div class="content-area">
+
+        <button class="menu-toggle-btn" id="menuToggle">☰ Меню</button>
 
         <header>
             <h1>Інтерактивний довідник: Вивчаємо HTML</h1>
@@ -235,9 +242,15 @@
         </section>
     </main>
 
+
     <!-- Семантичний блок 11: Підвал сайту -->
     <footer>
         <p>&copy; 2026 Навчальний проект з дисципліни Веб-технології. Всі права вроді захищено.</p>
     </footer>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
